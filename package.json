@@ -1,0 +1,10 @@
+{
+  "name": "infissi-media",
+  "version": "1.0.0",
+  "description": "Infissi Media - Magazine editoriale su serramenti, infissi ed edilizia. Static SEO/GEO/AEO-optimized multi-page site.",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}

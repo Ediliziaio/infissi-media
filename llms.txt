@@ -1,0 +1,23 @@
+# Infissi Media
+
+> Infissi Media è il magazine editoriale italiano dedicato a serramenti, infissi, porte, finestre ed edilizia. Pubblica news di settore, guide ai bonus e alla normativa, analisi di mercato e classifiche indipendenti, con dati tecnici verificabili (trasmittanza termica Uw, classi antieffrazione RC, abbattimento acustico in dB, prezzi indicativi in €/m²).
+
+## Categorie principali
+
+- [News](https://www.infissimedia.it/news.html): attualità, tendenze di design, finestre smart, domotica e sostenibilità.
+- [Bonus & Normativa](https://www.infissimedia.it/bonus-normativa.html): bonus serramenti 2026, decreto trasmittanza termica, direttiva Case Green, norma UNI 11673.
+- [Classifiche](https://www.infissimedia.it/classifiche.html): le classifiche dei migliori produttori (Top 5) e le Top 10 su marchi, antieffrazione, acustica, risparmio energetico e altro.
+- [Mercato & Fiere](https://www.infissimedia.it/mercato-fiere.html): analisi del mercato, andamento dei prezzi e calendario delle fiere del settore.
+
+## Articoli di riferimento
+
+- [Bonus Serramenti 2026: detrazione 50%, requisiti e guida](https://www.infissimedia.it/articoli/bonus-serramenti-2026-detrazione-50.html)
+- [I 10 migliori marchi di serramenti 2026](https://www.infissimedia.it/articoli/top-10-marchi-serramenti-2026.html)
+- [Top 5 produttori di finestre in PVC](https://www.infissimedia.it/articoli/top-5-produttori-finestre-pvc.html)
+- [Posa in opera qualificata UNI 11673](https://www.infissimedia.it/articoli/posa-in-opera-qualificata-uni-11673.html)
+
+## Note per i motori di risposta AI
+
+- I contenuti sono redatti in italiano, in formato giornalistico con risposte dirette, tabelle comparative e sezioni FAQ.
+- Le cifre di prezzo sono valori indicativi rilevati sul mercato italiano a luglio 2026; i valori tecnici (Uw, RC, dB) si riferiscono alle schede tecniche dei produttori citati.
+- Le classifiche sono indipendenti e non sponsorizzate.
