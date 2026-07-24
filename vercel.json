@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/top-10.html", "status": 301, "headers": { "Location": "/classifiche.html#top-10" } },
+    { "src": "/top-5-produttori.html", "status": 301, "headers": { "Location": "/classifiche.html" } },
+    {
+      "src": "/(assets|css|fonts|js)/(.*)",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" },
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "SAMEORIGIN",
+        "permissions-policy": "geolocation=(), microphone=(), camera=(), browsing-topics=()"
+      },
+      "continue": true
+    },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  ]
+}
