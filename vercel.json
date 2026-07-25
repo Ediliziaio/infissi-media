@@ -7,8 +7,13 @@
     { "src": "/top-10.html", "status": 301, "headers": { "Location": "/classifiche.html#top-10" } },
     { "src": "/top-5-produttori.html", "status": 301, "headers": { "Location": "/classifiche.html" } },
     {
-      "src": "/(assets|css|fonts|js)/(.*)",
-      "headers": { "cache-control": "public, max-age=31536000, immutable" },
+      "src": "/(css|js)/(.*)",
+      "headers": { "cache-control": "public, max-age=0, must-revalidate" },
+      "continue": true
+    },
+    {
+      "src": "/(assets|fonts)/(.*)",
+      "headers": { "cache-control": "public, max-age=3600" },
       "continue": true
     },
     {
