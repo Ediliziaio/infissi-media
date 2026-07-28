@@ -30,3 +30,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://www.infissimedia.it/sitemap.xml
+Sitemap: https://www.infissimedia.it/feed.xml
