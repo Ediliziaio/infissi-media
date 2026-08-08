@@ -444,3 +444,9 @@ footer{background:var(--ink);color:#aeb9c2;margin-top:50px}
 .sources{margin:28px 0;padding:18px 20px;border:1px solid var(--rule);border-radius:var(--radius);background:#fafafa}
 .sources h2{margin-top:0;font-size:20px}
 .sources p{font-size:15px;color:var(--ink-soft)}
+
+/* Slot pubblicitari: finché sono vuoti non devono comparire (nessun placeholder
+   visibile ai crawler = nessun profilo 'made for advertising').
+   Appena si incolla il codice dell'annuncio dentro il div, lo slot riappare da solo. */
+.ad-slot:empty{display:none!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important}
+.ad-slot:empty::before,.ad-slot:empty::after{content:none!important}
