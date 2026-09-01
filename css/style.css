@@ -450,3 +450,11 @@ footer{background:var(--ink);color:#aeb9c2;margin-top:50px}
    Appena si incolla il codice dell'annuncio dentro il div, lo slot riappare da solo. */
 .ad-slot:empty{display:none!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important}
 .ad-slot:empty::before,.ad-slot:empty::after{content:none!important}
+
+/* Slot con annuncio reale: niente cornice segnaposto, resta la dicitura
+   'Pubblicità' per la riconoscibilità dell'inserzione. */
+.ad-slot.ad-filled{background:transparent;border:0;min-height:0;padding:0}
+.ad-slot.ad-filled::after{content:none}
+.ad-slot.ad-filled::before{content:'Pubblicità';font-size:9px;opacity:.5;margin-bottom:6px}
+.ad-slot.ad-filled a{display:block;width:100%}
+.ad-slot.ad-filled img{display:block;width:100%;height:auto;border-radius:var(--radius)}
