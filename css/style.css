@@ -458,3 +458,15 @@ footer{background:var(--ink);color:#aeb9c2;margin-top:50px}
 .ad-slot.ad-filled::before{content:'Pubblicità';font-size:9px;opacity:.5;margin-bottom:6px}
 .ad-slot.ad-filled a{display:block;width:100%}
 .ad-slot.ad-filled img{display:block;width:100%;height:auto;border-radius:var(--radius)}
+
+/* Calcolatore detrazione / trasmittanza */
+.calc-card{border:1px solid var(--rule);border-radius:var(--radius);padding:20px 22px;margin:24px 0;background:var(--paper-alt)}
+.calc-card h2{margin-top:0}
+.calc-card label{display:block;font-size:14px;font-weight:600;margin-bottom:8px}
+.calc-card input,.calc-card select{width:100%;max-width:340px;padding:12px;border:1px solid var(--rule);border-radius:8px;font-size:16px;font-family:inherit;background:#fff}
+.calc-table{width:100%;margin:18px 0 6px}
+.calc-table th{text-align:left;font-weight:600;width:60%}
+.calc-table td{text-align:right;font-variant-numeric:tabular-nums}
+.calc-note{font-size:14px;color:var(--ink-soft);margin:10px 0 0}
+.calc-hint{font-size:14px;color:var(--ink-soft);margin-top:12px}
+@media(max-width:640px){.calc-card{padding:16px}.calc-card input,.calc-card select{max-width:100%}.calc-table th{width:auto}}
