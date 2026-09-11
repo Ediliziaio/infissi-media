@@ -139,6 +139,7 @@ def page(filename, doc_title, meta_desc, h1, intro, body_html, schema_type='WebP
 
 <div class="ad-slot ad-mobile-sticky" data-format="320×50 · mobile anchor" id="ad-mobile-sticky"></div>
 <script src="js/cookie-consent.js" defer></script>
+<script src="eic-lead.js" data-form-id="d25baeb7-902d-4172-8355-5c16c26b051d" defer></script>
 
 </body>
 </html>
@@ -193,7 +194,7 @@ page('contatti.html',
     </table>
 
     <h2>Modulo di contatto</h2>
-    <form action="#" method="post" style="display:grid;gap:14px;max-width:560px">
+    <form action="#" method="post" data-eic="contatto" style="display:grid;gap:14px;max-width:560px">
       <label style="font-size:14px;font-weight:600">Nome e cognome
         <input type="text" name="nome" required style="width:100%;padding:11px 12px;border:1px solid var(--rule);border-radius:6px;margin-top:6px;font-size:15px"></label>
       <label style="font-size:14px;font-weight:600">Email
@@ -204,6 +205,8 @@ page('contatti.html',
         <input type="checkbox" required style="margin-top:3px">
         <span>Ho letto la <a href="privacy-policy.html">Privacy Policy</a> e acconsento al trattamento dei dati per essere ricontattato.</span></label>
       <button type="submit" style="background:var(--accent-dark);color:#fff;border:0;border-radius:8px;padding:13px;font-weight:700;font-size:14px;cursor:pointer">Invia il messaggio</button>
+      <p role="status" data-eic-ok hidden style="margin:0;font-size:14px;font-weight:600;color:var(--accent-dark)">Messaggio ricevuto, grazie! Ti rispondiamo a breve.</p>
+      <p role="alert" data-eic-errore hidden style="margin:0;font-size:14px;font-weight:600;color:#b3261e">Invio non riuscito. Riprova tra poco oppure scrivici a <a href="mailto:redazione@infissimedia.it">redazione@infissimedia.it</a>.</p>
     </form>''',
      'ContactPage')
 

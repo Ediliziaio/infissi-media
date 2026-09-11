@@ -31,6 +31,10 @@ Nessuna dipendenza: il dev server è un semplice `node server.js` (zero `node_mo
 | `selfhost_fonts.py` | download font woff2 + fonts.css |
 | `ready_for_google.py` | ricerca, og:image, font locali |
 
+## Form → CRM Edilizia in Cloud
+
+Newsletter e modulo contatti vengono inviati al CRM da `eic-lead.js` (nella root). Va incluso su **ogni** pagina, subito dopo `js/cookie-consent.js` e con lo stesso prefisso di percorso (`eic-lead.js`, `../eic-lead.js`): salva UTM/gclid/fbclid all'atterraggio anche sulle pagine senza form. Un form viene inviato solo se ha `data-eic="newsletter"` o `data-eic="contatto"`; i campi si chiamano `nome`, `email`, `messaggio`.
+
 ## Prima della pubblicazione
 
 - Sostituire il dominio segnaposto `https://www.infissimedia.it` con quello reale (canonical, JSON-LD, sitemap, robots.txt, og:image)

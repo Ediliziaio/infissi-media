@@ -196,6 +196,7 @@ cerca = f'''<!DOCTYPE html>
 
 <div class="ad-slot ad-mobile-sticky" data-format="320×50 · mobile anchor" id="ad-mobile-sticky"></div>
 <script src="js/cookie-consent.js" defer></script>
+<script src="eic-lead.js" data-form-id="d25baeb7-902d-4172-8355-5c16c26b051d" defer></script>
 <script src="js/search-index.js" defer></script>
 <script src="js/search.js" defer></script>
 
