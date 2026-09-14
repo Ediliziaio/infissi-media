@@ -1,5 +1,12 @@
 window.IM_INDEX = [
  {
+  "t": "Preventivi serramenti: i tassi di conversione reali",
+  "u": "articoli/conversione-preventivi-serramenti-b2b.html",
+  "c": "Mercato & Fiere",
+  "d": "Quanti preventivi servono per un contratto, quanto incide il tempo di risposta e quali KPI misurare nella vendita B2B di serramenti e infissi.",
+  "date": "14 Settembre 2026"
+ },
+ {
   "t": "Bonus Serramenti 2026: Detrazione 50%, Requisiti e Guida",
   "u": "articoli/bonus-serramenti-2026-detrazione-50.html",
   "c": "Bonus & Normativa",
