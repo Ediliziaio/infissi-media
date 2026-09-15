@@ -1,5 +1,12 @@
 window.IM_INDEX = [
  {
+  "t": "Serramento che non tiene: di chi è la responsabilità",
+  "u": "articoli/responsabilita-posa-serramenti.html",
+  "c": "Bonus & Normativa",
+  "d": "Prodotto, progetto o posa: come si individua la responsabilità quando un serramento non tiene e cosa deve contenere il capitolato per dimostrarlo.",
+  "date": "15 Settembre 2026"
+ },
+ {
   "t": "Preventivi serramenti: i tassi di conversione reali",
   "u": "articoli/conversione-preventivi-serramenti-b2b.html",
   "c": "Mercato & Fiere",
