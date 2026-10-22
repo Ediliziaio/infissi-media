@@ -31,3 +31,4 @@ Allow: /
 
 Sitemap: https://www.infissimedia.it/sitemap.xml
 Sitemap: https://www.infissimedia.it/feed.xml
+Sitemap: https://www.infissimedia.it/sitemap-editorial.xml

@@ -1,19 +1,32 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "**/*", "use": "@vercel/static" }
-  ],
   "routes": [
-    { "src": "/top-10.html", "status": 301, "headers": { "Location": "/classifiche.html#top-10" } },
-    { "src": "/top-5-produttori.html", "status": 301, "headers": { "Location": "/classifiche.html" } },
+    {
+      "src": "/top-10.html",
+      "status": 301,
+      "headers": {
+        "Location": "/classifiche.html#top-10"
+      }
+    },
+    {
+      "src": "/top-5-produttori.html",
+      "status": 301,
+      "headers": {
+        "Location": "/classifiche.html"
+      }
+    },
     {
       "src": "/(css|js)/(.*)",
-      "headers": { "cache-control": "public, max-age=0, must-revalidate" },
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      },
       "continue": true
     },
     {
       "src": "/(assets|fonts)/(.*)",
-      "headers": { "cache-control": "public, max-age=3600" },
+      "headers": {
+        "cache-control": "public, max-age=3600"
+      },
       "continue": true
     },
     {
@@ -26,7 +39,15 @@
       },
       "continue": true
     },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
-  ]
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 404,
+      "dest": "/404.html"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }

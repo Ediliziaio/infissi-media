@@ -4,6 +4,7 @@
   "description": "Infissi Media - Magazine editoriale su serramenti, infissi ed edilizia. Static SEO/GEO/AEO-optimized multi-page site.",
   "private": true,
   "scripts": {
+    "build": "node scripts/build-static.mjs",
     "dev": "node server.js",
     "start": "node server.js"
   }
