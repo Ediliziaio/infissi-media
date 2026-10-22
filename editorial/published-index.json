@@ -2,8 +2,8 @@
   {
     "title": "Sostituzione infissi: i documenti da chiedere prima dell’acconto",
     "description": "Preventivo, prestazioni della finestra e pratica ENEA: una cartella semplice per sostituire gli infissi senza perdere i documenti importanti.",
-    "path": "/guide-pratiche/sostituzione-infissi-documenti-prima-acconto/",
-    "section": "guide-pratiche",
+    "path": "/articoli/sostituzione-infissi-documenti-prima-acconto.html",
+    "section": "native",
     "slug": "sostituzione-infissi-documenti-prima-acconto",
     "publishedAt": "2026-10-22T07:18:01Z",
     "image": "/editorial-assets/sostituzione-infissi-documenti-prima-acconto.webp",
@@ -11,26 +11,30 @@
     "sourceURLs": [
       "https://www.efficienzaenergetica.enea.it/detrazioni-fiscali/ecobonus/vademecum/serramenti-e-infissi.html",
       "https://agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-risparmio-energetico"
-    ]
+    ],
+    "previousPath": "/guide-pratiche/sostituzione-infissi-documenti-prima-acconto/",
+    "category": "guide"
   },
   {
     "title": "Renova Solution: scegliere le nuove finestre partendo dai vani",
     "description": "Aperture, rilievo e finiture: come preparare la richiesta per conoscere i servizi infissi di Renova Solution senza fermarsi al materiale del telaio.",
-    "path": "/speciali-aziende/renova-solution-scegliere-le-nuove-finestre-partendo-dai-vani/",
-    "section": "speciali-aziende",
+    "path": "/articoli/renova-solution-scegliere-le-nuove-finestre-partendo-dai-vani.html",
+    "section": "native",
     "slug": "renova-solution-scegliere-le-nuove-finestre-partendo-dai-vani",
     "publishedAt": "2026-10-22T07:18:01Z",
     "image": "/editorial-assets/renova-solution.webp",
     "sponsor": "Renova Solution",
     "sourceURLs": [
       "https://www.renovasolution.it/"
-    ]
+    ],
+    "previousPath": "/speciali-aziende/renova-solution-scegliere-le-nuove-finestre-partendo-dai-vani/",
+    "category": "guide"
   },
   {
     "title": "Nuove finestre e climatizzazione: il confronto da aprire con Innovasol",
     "description": "Dopo il rinnovo degli infissi, le abitudini della casa aiutano a impostare la richiesta per la climatizzazione. Un percorso di valutazione con Innovasol.",
-    "path": "/speciali-aziende/nuove-finestre-e-climatizzazione-il-confronto-da-aprire-con-innovasol/",
-    "section": "speciali-aziende",
+    "path": "/articoli/nuove-finestre-e-climatizzazione-il-confronto-da-aprire-con-innovasol.html",
+    "section": "native",
     "slug": "nuove-finestre-e-climatizzazione-il-confronto-da-aprire-con-innovasol",
     "publishedAt": "2026-10-22T07:18:01Z",
     "image": "/editorial-assets/innovasol.webp",
@@ -38,13 +42,15 @@
     "sourceURLs": [
       "https://innovasol.it/",
       "https://innovasol.it/impianti-climatizzazione-sicilia/"
-    ]
+    ],
+    "previousPath": "/speciali-aziende/nuove-finestre-e-climatizzazione-il-confronto-da-aprire-con-innovasol/",
+    "category": "news"
   },
   {
     "title": "Green Energy Group: la domotica comincia dalle abitudini di casa",
     "description": "Comandi, stanze e funzioni quotidiane: una richiesta concreta per conoscere la proposta domotica di Green Energy Group durante il rinnovo degli ambienti.",
-    "path": "/speciali-aziende/green-energy-group-la-domotica-comincia-dalle-abitudini-di-casa/",
-    "section": "speciali-aziende",
+    "path": "/articoli/green-energy-group-la-domotica-comincia-dalle-abitudini-di-casa.html",
+    "section": "native",
     "slug": "green-energy-group-la-domotica-comincia-dalle-abitudini-di-casa",
     "publishedAt": "2026-10-22T07:18:01Z",
     "image": "/editorial-assets/green-energy-group.webp",
@@ -52,6 +58,8 @@
     "sourceURLs": [
       "https://greenenergygroup.it/",
       "https://greenenergygroup.it/domotica/"
-    ]
+    ],
+    "previousPath": "/speciali-aziende/green-energy-group-la-domotica-comincia-dalle-abitudini-di-casa/",
+    "category": "news"
   }
 ]

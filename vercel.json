@@ -2,6 +2,48 @@
   "version": 2,
   "routes": [
     {
+      "src": "/guide\\-pratiche/sostituzione\\-infissi\\-documenti\\-prima\\-acconto/?",
+      "status": 301,
+      "headers": {
+        "Location": "/articoli/sostituzione-infissi-documenti-prima-acconto.html"
+      }
+    },
+    {
+      "src": "/speciali\\-aziende/renova\\-solution\\-scegliere\\-le\\-nuove\\-finestre\\-partendo\\-dai\\-vani/?",
+      "status": 301,
+      "headers": {
+        "Location": "/articoli/renova-solution-scegliere-le-nuove-finestre-partendo-dai-vani.html"
+      }
+    },
+    {
+      "src": "/speciali\\-aziende/nuove\\-finestre\\-e\\-climatizzazione\\-il\\-confronto\\-da\\-aprire\\-con\\-innovasol/?",
+      "status": 301,
+      "headers": {
+        "Location": "/articoli/nuove-finestre-e-climatizzazione-il-confronto-da-aprire-con-innovasol.html"
+      }
+    },
+    {
+      "src": "/speciali\\-aziende/green\\-energy\\-group\\-la\\-domotica\\-comincia\\-dalle\\-abitudini\\-di\\-casa/?",
+      "status": 301,
+      "headers": {
+        "Location": "/articoli/green-energy-group-la-domotica-comincia-dalle-abitudini-di-casa.html"
+      }
+    },
+    {
+      "src": "/guide\\-pratiche/?",
+      "status": 301,
+      "headers": {
+        "Location": "/news.html"
+      }
+    },
+    {
+      "src": "/speciali\\-aziende/?",
+      "status": 301,
+      "headers": {
+        "Location": "/news.html"
+      }
+    },
+    {
       "src": "/top-10.html",
       "status": 301,
       "headers": {
