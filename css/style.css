@@ -470,3 +470,11 @@ footer{background:var(--ink);color:#aeb9c2;margin-top:50px}
 .calc-note{font-size:14px;color:var(--ink-soft);margin:10px 0 0}
 .calc-hint{font-size:14px;color:var(--ink-soft);margin-top:12px}
 @media(max-width:640px){.calc-card{padding:16px}.calc-card input,.calc-card select{max-width:100%}.calc-table th{width:auto}}
+
+/* Compact house campaign: original logo, no empty mobile advertisement. */
+.ad-mobile-sticky.ad-filled{background:#fff;border-top:1px solid var(--rule)}
+.ad-mobile-sticky.ad-filled::before{margin-bottom:0;font-size:8px}
+.ad-mobile-sticky.ad-filled a{box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:480px;padding:4px 16px}
+.ad-mobile-sticky.ad-filled img{width:150px;max-width:46%;height:auto;border-radius:0}
+.ad-mobile-cta{background:#f57b08;color:#172b45;border-radius:4px;padding:6px 8px;font-size:10px;font-weight:700;letter-spacing:0;text-transform:none}
+@media(max-width:760px){.ad-mobile-sticky.ad-filled{min-height:50px}}
