@@ -7,7 +7,11 @@
   <language>it-IT</language>
   <atom:link href="https://www.infissimedia.it/feed.xml" rel="self" type="application/rss+xml" />
   <lastBuildDate>Tue, 15 Sep 2026 10:00:00 +0200</lastBuildDate>
-  <item>
+  <item><title>Panorama Infissi: sopralluogo, fornitura, posa e assistenza</title><link>https://www.infissimedia.it/articoli/panorama-infissi-sopralluogo-posa-assistenza.html</link><guid isPermaLink="true">https://www.infissimedia.it/articoli/panorama-infissi-sopralluogo-posa-assistenza.html</guid><description>Panorama Infissi a Paderno Dugnano: sopralluogo, fornitura, posa e assistenza per finestre e porte. Scopri showroom e contatti.</description><pubDate>Wed, 18 Nov 2026 10:00:00 GMT</pubDate></item>
+<item><title>Ser-Style: vendita e posa di finestre, porte e oscuranti a Lecco e in Brianza</title><link>https://www.infissimedia.it/articoli/ser-style-finestre-porte-oscuranti-lecco.html</link><guid isPermaLink="true">https://www.infissimedia.it/articoli/ser-style-finestre-porte-oscuranti-lecco.html</guid><description>Ser-Style vende e installa finestre, porte e oscuranti. Esposizione a Olgiate Molgora, consulenza, rilievi e assistenza per la casa.</description><pubDate>Wed, 18 Nov 2026 10:00:00 GMT</pubDate></item>
+
+
+<item>
     <title>Serramento che non tiene: di chi è la responsabilità</title>
     <link>https://www.infissimedia.it/articoli/responsabilita-posa-serramenti.html</link>
     <guid isPermaLink="true">https://www.infissimedia.it/articoli/responsabilita-posa-serramenti.html</guid>
@@ -296,5 +300,7 @@
     <enclosure url="https://www.infissimedia.it/assets/og/top-10-lucernari-finestre-tetto.jpg" type="image/png" length="0" />
   </item>
 <item><title>Scheda d’ordine serramenti: dal rilievo alla conferma prima della produzione</title><link>https://www.infissimedia.it/articoli/scheda-ordine-serramenti-rilievo-produzione.html</link><guid isPermaLink="true">https://www.infissimedia.it/articoli/scheda-ordine-serramenti-rilievo-produzione.html</guid><description>Una scheda d’ordine per serramenti: identificativi dei vani, versioni, configurazioni e conferme tra rilievo e produzione. Checklist operativa.</description><pubDate>Sat, 07 Nov 2026 07:00:00 GMT</pubDate></item><item><title>Consegna dei serramenti: organizzare documenti, identificativi e riscontri</title><link>https://www.infissimedia.it/articoli/consegna-serramenti-documenti-ricezione.html</link><guid isPermaLink="true">https://www.infissimedia.it/articoli/consegna-serramenti-documenti-ricezione.html</guid><description>Prepara la ricezione dei serramenti con elenco vani, riferimenti d’ordine, documenti e osservazioni. Una scheda da coordinare con i referenti.</description><pubDate>Sun, 08 Nov 2026 00:00:00 +0100</pubDate></item><item><title>Campioni colore infissi: guida alla scelta</title><link>https://www.infissimedia.it/articoli/campioni-colore-infissi-finiture-conferma-ordine.html</link><guid isPermaLink="true">https://www.infissimedia.it/articoli/campioni-colore-infissi-finiture-conferma-ordine.html</guid><description>Confronta campioni colore e finiture degli infissi: riferimenti, lati, accessori e conferma dell’ordine. Con una scheda CSV compilabile.</description><pubDate>Mon, 16 Nov 2026 11:56:30 +0100</pubDate></item><item><title>Maniglie delle finestre e accessori: la scheda da confermare prima dell’ordine</title><link>https://www.infissimedia.it/articoli/maniglie-finestre-accessori-scheda-ordine.html</link><guid isPermaLink="true">https://www.infissimedia.it/articoli/maniglie-finestre-accessori-scheda-ordine.html</guid><pubDate>Tue, 17 Nov 2026 07:02:10 GMT</pubDate><description>Modello, funzione, finitura e compatibilità: prepara una scheda per scegliere maniglie e accessori delle finestre e confermarli prima della produzione.</description></item>
+
+
 </channel>
 </rss>

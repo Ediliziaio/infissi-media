@@ -1,5 +1,36 @@
 [
   {
+    "title": "Panorama Infissi: sopralluogo, fornitura, posa e assistenza",
+    "description": "Panorama Infissi a Paderno Dugnano: sopralluogo, fornitura, posa e assistenza per finestre e porte. Scopri showroom e contatti.",
+    "path": "/articoli/panorama-infissi-sopralluogo-posa-assistenza.html",
+    "section": "native",
+    "slug": "panorama-infissi-sopralluogo-posa-assistenza",
+    "publishedAt": "2026-11-18",
+    "image": "/editorial-assets/panorama-infissi-sopralluogo-posa-assistenza.webp",
+    "sponsor": "Panorama Infissi",
+    "sourceURLs": [
+      "https://www.panoramainfissi.it/",
+      "https://www.panoramainfissi.it/#prodotti",
+      "https://www.panoramainfissi.it/#contatti"
+    ],
+    "category": "guide"
+  },
+  {
+    "title": "Ser-Style: vendita e posa di finestre, porte e oscuranti a Lecco e in Brianza",
+    "description": "Ser-Style vende e installa finestre, porte e oscuranti. Esposizione a Olgiate Molgora, consulenza, rilievi e assistenza per la casa.",
+    "path": "/articoli/ser-style-finestre-porte-oscuranti-lecco.html",
+    "section": "native",
+    "slug": "ser-style-finestre-porte-oscuranti-lecco",
+    "publishedAt": "2026-11-18",
+    "image": "/editorial-assets/ser-style-finestre-porte-oscuranti-lecco.webp",
+    "sponsor": "Ser-Style",
+    "sourceURLs": [
+      "https://ser-style.it/prodotti/",
+      "https://ser-style.it/contatti/"
+    ],
+    "category": "guide"
+  },
+  {
     "title": "Maniglie delle finestre e accessori: la scheda da confermare prima dell’ordine",
     "description": "Modello, funzione, finitura e compatibilità: prepara una scheda per scegliere maniglie e accessori delle finestre e confermarli prima della produzione.",
     "path": "/articoli/maniglie-finestre-accessori-scheda-ordine.html",
