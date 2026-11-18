@@ -1,0 +1,28 @@
+import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+import { dirname,join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root=dirname(dirname(fileURLToPath(import.meta.url))),origin='https://www.infissimedia.it';
+const decode=s=>s.replace(/&amp;/g,'&').replace(/&#(?:39|x27);|&apos;/gi,"'").replace(/&quot;/g,'"').replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n)));
+const plain=s=>decode(s.replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ').trim();
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const attrs=tag=>Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)].map(m=>[m[1],decode(m[2]??m[3])]));
+const articles=readdirSync(join(root,'articoli')).filter(f=>f.endsWith('.html')).map(file=>{
+ const html=readFileSync(join(root,'articoli',file),'utf8');
+ const canonical=[...html.matchAll(/<link\b[^>]*>/gi)].map(m=>attrs(m[0])).find(a=>a.rel==='canonical')?.href;
+ if(!canonical||canonical!==origin+'/articoli/'+file)throw Error('Unexpected article canonical: '+file);
+ const title=plain(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1]||'');if(!title)throw Error('Missing H1: '+file);
+ const section=decode(html.match(/"articleSection"\s*:\s*"([^"]+)"/)?.[1]||'');
+ const group=section==='Classifiche'?'Confronti e produttori':section==='Bonus & Normativa'?'Normativa e posa':section==='Mercato & Fiere'?'Mercato e fiere':'Guide e prodotti';
+ return {url:canonical,path:new URL(canonical).pathname,title,group};
+}).sort((a,b)=>a.title.localeCompare(b.title,'it'));
+if(new Set(articles.map(a=>a.url)).size!==articles.length)throw Error('Duplicate canonical article');
+const start='<!-- editorial-archive:start -->',end='<!-- editorial-archive:end -->';
+let content='<section class="section" aria-labelledby="archivio-completo"><div class="section-head"><h2 id="archivio-completo">Archivio per argomento</h2></div><p>Le guide e i confronti pubblicati, organizzati per tema. Scegli il percorso che completa le informazioni che stai raccogliendo.</p>';
+for(const group of ['Guide e prodotti','Normativa e posa','Confronti e produttori','Mercato e fiere'])content+='<section><h3>'+esc(group)+'</h3><ul>'+articles.filter(a=>a.group===group).map(a=>'<li><a href="'+esc(a.path)+'">'+esc(a.title)+'</a></li>').join('')+'</ul></section>';
+content+='</section>';
+const file=join(root,'news.html');let html=readFileSync(file,'utf8');const before=html;
+if(html.includes(start)){const i=html.indexOf(start),j=html.indexOf(end,i);if(j<0)throw Error('Unclosed archive marker');html=html.slice(0,i)+start+content+end+html.slice(j+end.length);}else html=html.replace('</main>',start+content+end+'</main>');
+let count=0;html=html.replace(/(<script\b[^>]*type=["']application\/ld\+json["'][^>]*>)([\s\S]*?)(<\/script>)/gi,(whole,open,body,close)=>{const value=JSON.parse(body);let changed=false;const visit=node=>{if(!node||typeof node!=='object')return;if(Array.isArray(node)){node.forEach(visit);return;}if(node['@type']==='ItemList'){count++;Object.assign(node,{name:'Archivio articoli — Infissi Media',numberOfItems:articles.length,itemListOrder:'https://schema.org/ItemListUnordered',itemListElement:articles.map((a,i)=>({'@type':'ListItem',position:i+1,url:a.url,name:a.title}))});changed=true;}if(node['@graph'])visit(node['@graph']);};visit(value);return changed?open+'\n'+JSON.stringify(value,null,2)+'\n'+close:whole;});
+if(count!==1)throw Error('Expected one article ItemList in News');
+if(html!==before)writeFileSync(file,html);
+console.log('Infissi Media: complete archive '+articles.length+' canonical articles; '+(html!==before?1:0)+' page updated.');
