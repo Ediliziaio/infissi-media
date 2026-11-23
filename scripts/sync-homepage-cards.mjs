@@ -1,0 +1,31 @@
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const root = dirname(dirname(fileURLToPath(import.meta.url)));
+const origin = 'https://www.infissimedia.it';
+const decode = value => value.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'");
+const escape = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const attributes = tag => Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g)].map(match => [match[1].toLowerCase(), decode(match[2] ?? match[3])]));
+let updated = 0;
+const homepage = join(root, 'index.html');
+const original = readFileSync(homepage, 'utf8');
+const html = original.replace(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["'][^>]*>[\s\S]*?<\/article>/gi, card => {
+  const heading = card.match(/<h[23]\b[^>]*>([\s\S]*?)<\/h[23]>/i)?.[1];
+  const link = heading?.match(/<a\b[^>]*>/i)?.[0];
+  const href = link && attributes(link).href;
+  if (!href) return card;
+  const target = new URL(href, origin);
+  if (target.origin !== origin || !/^\/articoli\/[^/]+\.html$/.test(target.pathname)) return card;
+  const file = join(root, target.pathname.slice(1));
+  if (!existsSync(file)) throw new Error(`Homepage article missing: ${target.pathname}`);
+  const article = readFileSync(file, 'utf8');
+  const description = [...article.matchAll(/<meta\b[^>]*>/gi)].map(match => attributes(match[0])).find(meta => meta.name?.toLowerCase() === 'description')?.content;
+  if (!description?.trim()) throw new Error(`Homepage article has no description: ${target.pathname}`);
+  if (!/<p>[\s\S]*?<\/p>/i.test(card)) return card;
+  const next = card.replace(/<p>[\s\S]*?<\/p>/i, `<p>${escape(description.trim())}</p>`);
+  if (next !== card) updated++;
+  return next;
+});
+if (html !== original) writeFileSync(homepage, html);
+console.log(`Homepage article descriptions: ${updated} cards aligned with their linked articles.`);
